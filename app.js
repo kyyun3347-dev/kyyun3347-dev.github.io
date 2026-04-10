@@ -434,8 +434,15 @@ function speakCurrent() {
   const u = new SpeechSynthesisUtterance(word);
   u.lang = 'en-US';
   u.rate = 0.85;
+  u.pitch = 1;
+  // iOS Safari: 음성 목록이 비동기로 로드되므로 대기 후 재시도
+  const voices = window.speechSynthesis.getVoices();
+  const enVoice = voices.find(v => v.lang.startsWith('en'));
+  if (enVoice) u.voice = enVoice;
   window.speechSynthesis.speak(u);
 }
+
+$('btn-speak').addEventListener('click', speakCurrent);
 
 /* ── Service Worker ── */
 if ('serviceWorker' in navigator) {

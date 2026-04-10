@@ -105,7 +105,6 @@
             <div class="flip-face front">
               <div class="card-word" id="card-word"></div>
               <div class="card-pos" id="card-pos-front"></div>
-              <button class="speak-btn" id="btn-speak" onclick="event.stopPropagation(); speakCurrent()">🔊</button>
               <div class="card-hint">탭하면 뜻이 보여요 👆</div>
             </div>
             <!-- Back -->
@@ -118,6 +117,10 @@
         </div>
 
         <button class="nav-btn" id="btn-next">›</button>
+      </div>
+
+      <div class="speak-row">
+        <button class="speak-btn" id="btn-speak">🔊 발음 듣기</button>
       </div>
 
       <button class="btn btn-green hidden" id="btn-to-quiz" style="margin-top:14px">
