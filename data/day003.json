@@ -1,0 +1,309 @@
+{
+  "date": "2026-04-10",
+  "day": 3,
+  "type": "study",
+  "review_num": null,
+  "total": 50,
+  "words": [
+    {
+      "en": "social justice",
+      "pos": "n",
+      "ko": "사회 정의",
+      "ex": "She has dedicated her career to social justice."
+    },
+    {
+      "en": "dropout",
+      "pos": "n/v",
+      "ko": "중퇴자 / 중퇴하다",
+      "ex": "The dropout rate is highest in low-income areas."
+    },
+    {
+      "en": "optics",
+      "pos": "n",
+      "ko": "외적 이미지",
+      "ex": "The optics of that decision were terrible."
+    },
+    {
+      "en": "at the end of the day",
+      "pos": "phrase",
+      "ko": "결국에는",
+      "ex": "At the end of the day, results matter."
+    },
+    {
+      "en": "move the needle",
+      "pos": "phrase",
+      "ko": "변화를 일으키다",
+      "ex": "The policy barely moved the needle."
+    },
+    {
+      "en": "content",
+      "pos": "adj",
+      "ko": "만족한",
+      "ex": "He was content with his simple life."
+    },
+    {
+      "en": "mark",
+      "pos": "v",
+      "ko": "나타내다",
+      "ex": "The deal marks a turning point in relations."
+    },
+    {
+      "en": "echo chamber",
+      "pos": "n",
+      "ko": "에코 챔버",
+      "ex": "Political echo chambers deepen divisions."
+    },
+    {
+      "en": "bite the bullet",
+      "pos": "phrase",
+      "ko": "결단을 내리다",
+      "ex": "Sometimes you just have to bite the bullet."
+    },
+    {
+      "en": "settlement",
+      "pos": "n",
+      "ko": "합의",
+      "ex": "They reached an out-of-court settlement."
+    },
+    {
+      "en": "privatize",
+      "pos": "v",
+      "ko": "민영화하다",
+      "ex": "There are plans to privatize the national railway."
+    },
+    {
+      "en": "slogan",
+      "pos": "n",
+      "ko": "슬로건",
+      "ex": "Their campaign slogan resonated with voters."
+    },
+    {
+      "en": "more often than not",
+      "pos": "phrase",
+      "ko": "대부분의 경우",
+      "ex": "More often than not, the first impression matters."
+    },
+    {
+      "en": "call the shots",
+      "pos": "phrase",
+      "ko": "결정권을 갖다",
+      "ex": "Who's really calling the shots here?"
+    },
+    {
+      "en": "food insecurity",
+      "pos": "n",
+      "ko": "식량 불안정",
+      "ex": "Food insecurity affects millions of families."
+    },
+    {
+      "en": "ratify",
+      "pos": "v",
+      "ko": "비준하다",
+      "ex": "The treaty was ratified by all member states."
+    },
+    {
+      "en": "make a point",
+      "pos": "phrase",
+      "ko": "요점을 말하다",
+      "ex": "He made a valid point about job losses."
+    },
+    {
+      "en": "affectionate",
+      "pos": "adj",
+      "ko": "애정 어린",
+      "ex": "He's very affectionate with his kids."
+    },
+    {
+      "en": "overshadow",
+      "pos": "v",
+      "ko": "빛을 가리다",
+      "ex": "The scandal overshadowed the summit."
+    },
+    {
+      "en": "pander",
+      "pos": "v",
+      "ko": "아첨하다",
+      "ex": "Critics accused him of pandering to the base."
+    },
+    {
+      "en": "bull market",
+      "pos": "n",
+      "ko": "강세장",
+      "ex": "The bull market lasted for over a decade."
+    },
+    {
+      "en": "mount",
+      "pos": "v",
+      "ko": "고조되다",
+      "ex": "Pressure on the president is mounting."
+    },
+    {
+      "en": "descend into",
+      "pos": "v",
+      "ko": "~로 빠져들다",
+      "ex": "The city descended into chaos."
+    },
+    {
+      "en": "source",
+      "pos": "n",
+      "ko": "정보 출처",
+      "ex": "The journalist refused to reveal her source."
+    },
+    {
+      "en": "warn",
+      "pos": "v",
+      "ko": "경고하다",
+      "ex": "Scientists warn that time is running out."
+    },
+    {
+      "en": "whistleblower",
+      "pos": "n",
+      "ko": "내부 고발자",
+      "ex": "The whistleblower exposed the cover-up."
+    },
+    {
+      "en": "hang in the balance",
+      "pos": "v",
+      "ko": "불확실한 상태이다",
+      "ex": "The fate of the bill hangs in the balance."
+    },
+    {
+      "en": "flashpoint",
+      "pos": "n",
+      "ko": "분쟁의 불씨",
+      "ex": "The region remains a geopolitical flashpoint."
+    },
+    {
+      "en": "bear in mind",
+      "pos": "phrase",
+      "ko": "명심하다",
+      "ex": "Bear in mind that plans can change."
+    },
+    {
+      "en": "resilience",
+      "pos": "n",
+      "ko": "회복력",
+      "ex": "Young people showed remarkable resilience."
+    },
+    {
+      "en": "birth rate",
+      "pos": "n",
+      "ko": "출생률",
+      "ex": "The birth rate has fallen sharply."
+    },
+    {
+      "en": "conservation",
+      "pos": "n",
+      "ko": "보전",
+      "ex": "Wildlife conservation requires international effort."
+    },
+    {
+      "en": "escalation",
+      "pos": "n",
+      "ko": "고조",
+      "ex": "Further escalation must be avoided."
+    },
+    {
+      "en": "off the table",
+      "pos": "prep",
+      "ko": "제외된",
+      "ex": "Military action is off the table for now."
+    },
+    {
+      "en": "minimum wage",
+      "pos": "n",
+      "ko": "최저 임금",
+      "ex": "Unions are pushing to raise the minimum wage."
+    },
+    {
+      "en": "spark debate",
+      "pos": "phrase",
+      "ko": "논란을 일으키다",
+      "ex": "The ruling sparked fierce debate."
+    },
+    {
+      "en": "take with a grain of salt",
+      "pos": "phrase",
+      "ko": "믿지 않고 듣다",
+      "ex": "Take that poll with a grain of salt."
+    },
+    {
+      "en": "chill",
+      "pos": "v/adj",
+      "ko": "쉬다 / 편안한",
+      "ex": "Let's just chill at home tonight."
+    },
+    {
+      "en": "polarizing",
+      "pos": "adj",
+      "ko": "의견을 갈라놓는",
+      "ex": "It's a deeply polarizing issue."
+    },
+    {
+      "en": "empower",
+      "pos": "v",
+      "ko": "역량을 키우다",
+      "ex": "Civic education empowers communities."
+    },
+    {
+      "en": "mainstream",
+      "pos": "n/adj",
+      "ko": "주류 / 주류의",
+      "ex": "The idea has entered the mainstream."
+    },
+    {
+      "en": "having said that",
+      "pos": "phrase",
+      "ko": "그렇긴 하지만",
+      "ex": "Having said that, there are still risks."
+    },
+    {
+      "en": "welfare",
+      "pos": "n",
+      "ko": "복지",
+      "ex": "Welfare spending has been cut significantly."
+    },
+    {
+      "en": "go off-script",
+      "pos": "phrase",
+      "ko": "즉흥 발언을 하다",
+      "ex": "The president went off-script during the speech."
+    },
+    {
+      "en": "green energy",
+      "pos": "n",
+      "ko": "친환경 에너지",
+      "ex": "Switching to green energy reduces costs long-term."
+    },
+    {
+      "en": "consensus",
+      "pos": "n",
+      "ko": "합의",
+      "ex": "There's no political consensus on the issue."
+    },
+    {
+      "en": "compost",
+      "pos": "v/n",
+      "ko": "퇴비로 만들다 / 퇴비",
+      "ex": "We compost our kitchen waste."
+    },
+    {
+      "en": "harm reduction",
+      "pos": "n",
+      "ko": "위해 감소",
+      "ex": "Harm reduction strategies save lives."
+    },
+    {
+      "en": "layover",
+      "pos": "n",
+      "ko": "경유 대기",
+      "ex": "I have a two-hour layover in Singapore."
+    },
+    {
+      "en": "rhetoric",
+      "pos": "n",
+      "ko": "수사학, 말 잔치",
+      "ex": "His rhetoric appealed to working-class voters."
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "date": "2026-04-10",
+  "day": 1,
+  "type": "study",
+  "review_num": null,
+  "total": 50,
+  "words": [
+    {
+      "en": "subpoena",
+      "pos": "n/v",
+      "ko": "소환장 / 소환하다",
+      "ex": "He was subpoenaed to testify before Congress."
+    },
+    {
+      "en": "big tech",
+      "pos": "n",
+      "ko": "빅테크",
+      "ex": "Big tech companies are under regulatory pressure."
+    },
+    {
+      "en": "in the wake of",
+      "pos": "prep",
+      "ko": "~의 여파로",
+      "ex": "Protests erupted in the wake of the verdict."
+    },
+    {
+      "en": "false dichotomy",
+      "pos": "n",
+      "ko": "거짓 이분법",
+      "ex": "That's a false dichotomy."
+    },
+    {
+      "en": "shell company",
+      "pos": "n",
+      "ko": "유령 회사",
+      "ex": "The money was routed through shell companies."
+    },
+    {
+      "en": "undocumented",
+      "pos": "adj",
+      "ko": "미등록의",
+      "ex": "Undocumented immigrants contribute to the economy."
+    },
+    {
+      "en": "voter turnout",
+      "pos": "n",
+      "ko": "투표율",
+      "ex": "Voter turnout reached a record high."
+    },
+    {
+      "en": "virtue signal",
+      "pos": "v",
+      "ko": "도덕적 우월감을 과시하다",
+      "ex": "He was accused of virtue signaling."
+    },
+    {
+      "en": "a double-edged sword",
+      "pos": "phrase",
+      "ko": "양날의 검",
+      "ex": "Social media is a double-edged sword."
+    },
+    {
+      "en": "under the circumstances",
+      "pos": "phrase",
+      "ko": "상황을 감안하면",
+      "ex": "You did well under the circumstances."
+    },
+    {
+      "en": "regime",
+      "pos": "n",
+      "ko": "정권",
+      "ex": "The authoritarian regime suppressed dissent."
+    },
+    {
+      "en": "all things considered",
+      "pos": "phrase",
+      "ko": "모든 것을 고려하면",
+      "ex": "All things considered, it went pretty well."
+    },
+    {
+      "en": "universal healthcare",
+      "pos": "n",
+      "ko": "전국민 의료보험",
+      "ex": "Universal healthcare is still debated in the US."
+    },
+    {
+      "en": "empower",
+      "pos": "v",
+      "ko": "역량을 키우다",
+      "ex": "Education empowers people to change their lives."
+    },
+    {
+      "en": "multicultural",
+      "pos": "adj",
+      "ko": "다문화의",
+      "ex": "It's a vibrant multicultural city."
+    },
+    {
+      "en": "precedent",
+      "pos": "n",
+      "ko": "선례",
+      "ex": "This ruling sets a dangerous precedent."
+    },
+    {
+      "en": "behind closed doors",
+      "pos": "phrase",
+      "ko": "비밀리에",
+      "ex": "The real negotiations happen behind closed doors."
+    },
+    {
+      "en": "lobby for",
+      "pos": "v",
+      "ko": "로비하다",
+      "ex": "Pharmaceutical companies lobby heavily for favorable rules."
+    },
+    {
+      "en": "heartbroken",
+      "pos": "adj",
+      "ko": "상심한",
+      "ex": "She was heartbroken after the breakup."
+    },
+    {
+      "en": "look up to",
+      "pos": "v",
+      "ko": "존경하다",
+      "ex": "I've always looked up to my older sister."
+    },
+    {
+      "en": "as far as I can tell",
+      "pos": "phrase",
+      "ko": "내가 알기로는",
+      "ex": "As far as I can tell, no one noticed."
+    },
+    {
+      "en": "a big deal",
+      "pos": "phrase",
+      "ko": "중요한 일",
+      "ex": "This promotion is a really big deal for her."
+    },
+    {
+      "en": "gerrymandering",
+      "pos": "n",
+      "ko": "게리맨더링",
+      "ex": "Gerrymandering has distorted the district map."
+    },
+    {
+      "en": "salvage",
+      "pos": "v",
+      "ko": "수습하다",
+      "ex": "He tried to salvage his reputation."
+    },
+    {
+      "en": "relieved",
+      "pos": "adj",
+      "ko": "안도한",
+      "ex": "She was relieved to hear the good news."
+    },
+    {
+      "en": "candidate",
+      "pos": "n",
+      "ko": "후보자",
+      "ex": "Three candidates are running for mayor."
+    },
+    {
+      "en": "shelter",
+      "pos": "n",
+      "ko": "피난처, 보호소",
+      "ex": "Victims were taken to a women's shelter."
+    },
+    {
+      "en": "meddle",
+      "pos": "v",
+      "ko": "참견하다",
+      "ex": "Foreign powers meddled in domestic affairs."
+    },
+    {
+      "en": "flip-flop",
+      "pos": "v/n",
+      "ko": "말을 바꾸다 / 입장 번복",
+      "ex": "She was accused of flip-flopping on the issue."
+    },
+    {
+      "en": "unicorn",
+      "pos": "n",
+      "ko": "유니콘 기업",
+      "ex": "The app became a unicorn within two years."
+    },
+    {
+      "en": "right-wing",
+      "pos": "adj",
+      "ko": "우파의",
+      "ex": "Right-wing media promoted the story."
+    },
+    {
+      "en": "on the table",
+      "pos": "prep",
+      "ko": "논의 중인",
+      "ex": "All options are on the table."
+    },
+    {
+      "en": "universal basic income",
+      "pos": "n",
+      "ko": "기본 소득",
+      "ex": "Some economists support universal basic income."
+    },
+    {
+      "en": "segregation",
+      "pos": "n",
+      "ko": "인종 차별",
+      "ex": "Racial segregation was legally ended in 1964."
+    },
+    {
+      "en": "fall out",
+      "pos": "v",
+      "ko": "사이가 나빠지다",
+      "ex": "They fell out over a misunderstanding."
+    },
+    {
+      "en": "tighten",
+      "pos": "v",
+      "ko": "강화하다",
+      "ex": "They plan to tighten border controls."
+    },
+    {
+      "en": "electric vehicle",
+      "pos": "n",
+      "ko": "전기차",
+      "ex": "Sales of electric vehicles are booming."
+    },
+    {
+      "en": "imminent",
+      "pos": "adj",
+      "ko": "임박한",
+      "ex": "An imminent threat was reported."
+    },
+    {
+      "en": "misinformation",
+      "pos": "n",
+      "ko": "잘못된 정보",
+      "ex": "Misinformation spreads fast on social media."
+    },
+    {
+      "en": "privacy",
+      "pos": "n",
+      "ko": "개인 정보 보호",
+      "ex": "Privacy concerns around AI are growing."
+    },
+    {
+      "en": "all of a sudden",
+      "pos": "phrase",
+      "ko": "갑자기",
+      "ex": "All of a sudden, the lights went out."
+    },
+    {
+      "en": "testimony",
+      "pos": "n",
+      "ko": "증언",
+      "ex": "His testimony contradicted earlier statements."
+    },
+    {
+      "en": "deadline",
+      "pos": "n",
+      "ko": "마감 기한",
+      "ex": "The deadline is tomorrow and I'm not done."
+    },
+    {
+      "en": "framing",
+      "pos": "n",
+      "ko": "프레이밍",
+      "ex": "The framing of the issue matters enormously."
+    },
+    {
+      "en": "make headlines",
+      "pos": "v",
+      "ko": "화제가 되다",
+      "ex": "The incident made international headlines."
+    },
+    {
+      "en": "craving",
+      "pos": "n",
+      "ko": "갈망",
+      "ex": "I have a craving for spicy food."
+    },
+    {
+      "en": "the tip of the iceberg",
+      "pos": "phrase",
+      "ko": "빙산의 일각",
+      "ex": "What we know is just the tip of the iceberg."
+    },
+    {
+      "en": "beg the question",
+      "pos": "phrase",
+      "ko": "의문을 갖게 하다",
+      "ex": "This begs the question: why did no one speak up?"
+    },
+    {
+      "en": "discrimination",
+      "pos": "n",
+      "ko": "차별",
+      "ex": "Discrimination based on race is illegal."
+    },
+    {
+      "en": "fast-track",
+      "pos": "v",
+      "ko": "신속하게 처리하다",
+      "ex": "The bill was fast-tracked through Parliament."
+    }
+  ]
+}
