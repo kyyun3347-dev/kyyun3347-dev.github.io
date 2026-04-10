@@ -232,12 +232,11 @@ function renderQuiz() {
   if (State.quizMode === 'A') {
     $('quiz-q-label').textContent = '이 단어의 한국어 뜻은?';
     $('quiz-q-word').textContent  = w.en;
-    $('quiz-q-pos').textContent   = w.pos;
   } else {
     $('quiz-q-label').textContent = '이 뜻의 영어 단어는?';
     $('quiz-q-word').textContent  = w.ko;
-    $('quiz-q-pos').textContent   = w.pos;
   }
+  $('quiz-q-pos').textContent = '';
 
   // choices
   const choices  = makeChoices(w, words, State.quizMode);
