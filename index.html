@@ -90,6 +90,7 @@
       <button class="back-btn" id="btn-learn-back">‹</button>
       <h1>카드 학습</h1>
       <span class="badge" id="learn-counter"></span>
+      <button class="back-btn" id="btn-voice-settings" title="음성 설정">⚙️</button>
     </div>
     <div class="learn-body">
       <div class="progress-bar-wrap">
@@ -172,6 +173,17 @@
 
       <div class="wrong-title hidden" id="wrong-title">틀린 단어 목록</div>
       <div id="wrong-list"></div>
+    </div>
+  </div>
+
+  <!-- ══ VOICE MODAL ══════════════════════════════════════ -->
+  <div id="voice-modal" class="modal-overlay hidden">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <span class="modal-title">음성 선택</span>
+        <button class="modal-close" id="btn-voice-close">✕</button>
+      </div>
+      <div id="voice-list" class="voice-list"></div>
     </div>
   </div>
 

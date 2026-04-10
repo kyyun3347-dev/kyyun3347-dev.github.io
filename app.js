@@ -427,6 +427,18 @@ function shuffle(arr) {
 }
 
 /* ── TTS ── */
+const VOICE_KEY = 'engword_voice';
+
+function getEnVoices() {
+  return window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
+}
+
+function getSavedVoice() {
+  const name = localStorage.getItem(VOICE_KEY);
+  if (!name) return null;
+  return getEnVoices().find(v => v.name === name) || null;
+}
+
 function speakCurrent() {
   const word = State.words[State.learnIndex]?.en;
   if (!word || !window.speechSynthesis) return;
@@ -434,15 +446,57 @@ function speakCurrent() {
   const u = new SpeechSynthesisUtterance(word);
   u.lang = 'en-US';
   u.rate = 0.85;
-  u.pitch = 1;
-  // iOS Safari: 음성 목록이 비동기로 로드되므로 대기 후 재시도
-  const voices = window.speechSynthesis.getVoices();
-  const enVoice = voices.find(v => v.lang.startsWith('en'));
-  if (enVoice) u.voice = enVoice;
+  const saved = getSavedVoice();
+  if (saved) u.voice = saved;
   window.speechSynthesis.speak(u);
 }
 
+function openVoiceModal() {
+  const list = $('voice-list');
+  list.innerHTML = '';
+
+  const populate = () => {
+    const voices = getEnVoices();
+    const savedName = localStorage.getItem(VOICE_KEY);
+    list.innerHTML = '';
+    voices.forEach(v => {
+      const btn = document.createElement('button');
+      btn.className = 'voice-item' + (v.name === savedName ? ' selected' : '');
+      btn.innerHTML = `<span class="vi-name">${v.name}</span><span class="vi-lang">${v.lang}</span>`;
+      btn.addEventListener('click', () => {
+        localStorage.setItem(VOICE_KEY, v.name);
+        document.querySelectorAll('.voice-item').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        // 선택한 음성으로 바로 미리듣기
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance('Hello');
+        u.voice = v; u.lang = v.lang; u.rate = 0.85;
+        window.speechSynthesis.speak(u);
+      });
+      list.appendChild(btn);
+    });
+    if (voices.length === 0) {
+      list.innerHTML = '<p style="color:var(--muted);text-align:center;padding:16px">사용 가능한 영어 음성이 없습니다</p>';
+    }
+  };
+
+  // iOS: 음성 목록 비동기 로드 대기
+  if (window.speechSynthesis.getVoices().length > 0) {
+    populate();
+  } else {
+    window.speechSynthesis.addEventListener('voiceschanged', populate, { once: true });
+    window.speechSynthesis.getVoices(); // trigger load
+  }
+
+  $('voice-modal').classList.remove('hidden');
+}
+
 $('btn-speak').addEventListener('click', speakCurrent);
+$('btn-voice-settings').addEventListener('click', openVoiceModal);
+$('btn-voice-close').addEventListener('click', () => $('voice-modal').classList.add('hidden'));
+$('voice-modal').addEventListener('click', e => {
+  if (e.target === $('voice-modal')) $('voice-modal').classList.add('hidden');
+});
 
 /* ── Service Worker ── */
 if ('serviceWorker' in navigator) {
