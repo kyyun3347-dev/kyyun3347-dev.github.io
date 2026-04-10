@@ -355,6 +355,39 @@ $('btn-next-part').addEventListener('click', () => {
 });
 
 /* ══════════════════════════════════════════════════════
+   WORDLIST
+══════════════════════════════════════════════════════ */
+function showWordlist() {
+  const t = State.today;
+  const label = t.type === 'review'
+    ? `Review ${String(t.review_num).padStart(2,'0')}`
+    : `Day ${String(t.day).padStart(3,'0')}`;
+  $('wordlist-title').textContent = label + ' — 단어 목록';
+  $('wordlist-badge').textContent = State.words.length + '개';
+
+  const body = $('wordlist-body');
+  body.innerHTML = '';
+  State.words.forEach((w, i) => {
+    const div = document.createElement('div');
+    div.className = 'wl-item';
+    div.innerHTML = `
+      <div class="wl-num">${String(i + 1).padStart(2, '0')}</div>
+      <div class="wl-content">
+        <div class="wl-en">${w.en}</div>
+        <div class="wl-pos">${w.pos}</div>
+        <div class="wl-ko">${w.ko}</div>
+        <div class="wl-ex">${w.ex}</div>
+      </div>
+    `;
+    body.appendChild(div);
+  });
+  showScreen('screen-wordlist');
+}
+
+$('btn-wordlist').addEventListener('click', showWordlist);
+$('btn-wordlist-back').addEventListener('click', () => showScreen('screen-home'));
+
+/* ══════════════════════════════════════════════════════
    HOME button handlers
 ══════════════════════════════════════════════════════ */
 $('btn-start-learn').addEventListener('click', startLearn);
