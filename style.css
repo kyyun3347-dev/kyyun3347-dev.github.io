@@ -188,14 +188,16 @@ html, body {
 .card-pos { font-size: 15px; opacity: .65; margin-bottom: 6px; }
 .card-hint { font-size: 13px; opacity: .45; margin-top: 16px; }
 .speak-row {
-  display: flex; justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-bottom: 12px;
 }
 .speak-btn {
   background: var(--card);
   border: none; border-radius: 50%;
-  width: 52px; height: 52px;
-  font-size: 22px; cursor: pointer;
+  width: 64px; height: 64px;
+  font-size: 28px; cursor: pointer;
   box-shadow: var(--shadow);
   display: flex; align-items: center; justify-content: center;
   touch-action: manipulation;
