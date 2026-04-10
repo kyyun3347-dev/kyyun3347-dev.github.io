@@ -130,6 +130,9 @@ function renderCard() {
   $('learn-counter').textContent = `${idx + 1} / ${total}`;
 
   // card content
+  const wordLen = w.en.length;
+  const wordSize = wordLen <= 8 ? '36px' : wordLen <= 12 ? '28px' : wordLen <= 16 ? '22px' : '18px';
+  $('card-word').style.fontSize = wordSize;
   $('card-word').textContent    = w.en;
   $('card-pos-front').textContent = w.pos;
   $('card-ko').textContent      = w.ko;

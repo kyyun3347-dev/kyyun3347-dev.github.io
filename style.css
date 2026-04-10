@@ -179,10 +179,10 @@ html, body {
 }
 
 .card-word {
-  font-size: clamp(26px, 8vw, 40px);
+  font-size: 36px;
   font-weight: 800;
   margin-bottom: 10px;
-  word-break: break-word;
+  white-space: nowrap;
   line-height: 1.2;
 }
 .card-pos { font-size: 15px; opacity: .65; margin-bottom: 6px; }
