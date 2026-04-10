@@ -1,0 +1,309 @@
+{
+  "date": "2026-04-10",
+  "day": 2,
+  "type": "study",
+  "review_num": null,
+  "total": 50,
+  "words": [
+    {
+      "en": "renewable energy",
+      "pos": "n",
+      "ko": "재생 에너지",
+      "ex": "Investment in renewable energy is growing fast."
+    },
+    {
+      "en": "mediate",
+      "pos": "v",
+      "ko": "중재하다",
+      "ex": "The UN mediated between the two sides."
+    },
+    {
+      "en": "amid",
+      "pos": "prep",
+      "ko": "~가운데",
+      "ex": "The talks collapsed amid rising tensions."
+    },
+    {
+      "en": "implication",
+      "pos": "n",
+      "ko": "함의",
+      "ex": "The implications are far-reaching."
+    },
+    {
+      "en": "give or take",
+      "pos": "phrase",
+      "ko": "대략",
+      "ex": "It'll take about two hours, give or take."
+    },
+    {
+      "en": "upfront",
+      "pos": "adj",
+      "ko": "솔직한",
+      "ex": "Just be upfront about how you feel."
+    },
+    {
+      "en": "legislature",
+      "pos": "n",
+      "ko": "입법부",
+      "ex": "The legislature passed the budget."
+    },
+    {
+      "en": "the elephant in the room",
+      "pos": "phrase",
+      "ko": "공공연한 비밀",
+      "ex": "No one mentioned the elephant in the room."
+    },
+    {
+      "en": "trigger",
+      "pos": "n",
+      "ko": "트리거, 자극",
+      "ex": "That topic is a trigger for some people."
+    },
+    {
+      "en": "paper over",
+      "pos": "phrase",
+      "ko": "덮어두다",
+      "ex": "The deal papers over deep divisions."
+    },
+    {
+      "en": "overplay",
+      "pos": "v",
+      "ko": "과장하다",
+      "ex": "They overplayed their hand in negotiations."
+    },
+    {
+      "en": "put up with",
+      "pos": "v",
+      "ko": "참다, 견디다",
+      "ex": "I can't put up with his attitude anymore."
+    },
+    {
+      "en": "underfunded",
+      "pos": "adj",
+      "ko": "자금 부족의",
+      "ex": "Public schools are consistently underfunded."
+    },
+    {
+      "en": "diversity",
+      "pos": "n",
+      "ko": "다양성",
+      "ex": "Diversity in the workplace improves creativity."
+    },
+    {
+      "en": "moody",
+      "pos": "adj",
+      "ko": "기분이 오락가락하는",
+      "ex": "He tends to get moody under pressure."
+    },
+    {
+      "en": "pack",
+      "pos": "v",
+      "ko": "짐을 싸다",
+      "ex": "I haven't started packing for the trip yet."
+    },
+    {
+      "en": "marginalized",
+      "pos": "adj",
+      "ko": "소외된",
+      "ex": "Marginalized communities need more support."
+    },
+    {
+      "en": "that being said",
+      "pos": "phrase",
+      "ko": "그렇긴 하지만",
+      "ex": "That being said, we should keep trying."
+    },
+    {
+      "en": "get the ball rolling",
+      "pos": "phrase",
+      "ko": "시작하다",
+      "ex": "Let's get the ball rolling on this project."
+    },
+    {
+      "en": "budget",
+      "pos": "n/v",
+      "ko": "예산 / 예산을 짜다",
+      "ex": "We need to stick to our budget this month."
+    },
+    {
+      "en": "make a case for",
+      "pos": "phrase",
+      "ko": "주장을 펼치다",
+      "ex": "She made a strong case for raising taxes."
+    },
+    {
+      "en": "dove",
+      "pos": "n",
+      "ko": "비둘기파",
+      "ex": "Doves argued for a diplomatic solution."
+    },
+    {
+      "en": "antitrust",
+      "pos": "adj",
+      "ko": "독점 금지의",
+      "ex": "Antitrust regulators launched an investigation."
+    },
+    {
+      "en": "according to",
+      "pos": "phrase",
+      "ko": "~에 따르면",
+      "ex": "According to officials, talks are ongoing."
+    },
+    {
+      "en": "top-down",
+      "pos": "adj",
+      "ko": "위에서 아래로의",
+      "ex": "The top-down policy was poorly received."
+    },
+    {
+      "en": "on thin ice",
+      "pos": "phrase",
+      "ko": "불안한 상황에",
+      "ex": "The government is already on thin ice."
+    },
+    {
+      "en": "by and large",
+      "pos": "phrase",
+      "ko": "대체로",
+      "ex": "By and large, the event was a success."
+    },
+    {
+      "en": "hate crime",
+      "pos": "n",
+      "ko": "혐오 범죄",
+      "ex": "Hate crimes have increased significantly."
+    },
+    {
+      "en": "condemn",
+      "pos": "v",
+      "ko": "비난하다",
+      "ex": "World leaders condemned the attack."
+    },
+    {
+      "en": "grandstand",
+      "pos": "v",
+      "ko": "쇼를 하다",
+      "ex": "Politicians love to grandstand during hearings."
+    },
+    {
+      "en": "in somebody's corner",
+      "pos": "phrase",
+      "ko": "~의 편이다",
+      "ex": "I'm in your corner no matter what."
+    },
+    {
+      "en": "advocate",
+      "pos": "v",
+      "ko": "주장하다, 지지하다",
+      "ex": "He advocates for stronger gun laws."
+    },
+    {
+      "en": "net zero",
+      "pos": "n",
+      "ko": "탄소 중립",
+      "ex": "The company has pledged to reach net zero by 2040."
+    },
+    {
+      "en": "zero-sum",
+      "pos": "adj",
+      "ko": "제로섬의",
+      "ex": "Politics doesn't have to be zero-sum."
+    },
+    {
+      "en": "disengage",
+      "pos": "v",
+      "ko": "이탈하다",
+      "ex": "Young people are disengaging from politics."
+    },
+    {
+      "en": "mandate",
+      "pos": "n",
+      "ko": "위임, 명령",
+      "ex": "The party claims a mandate from voters."
+    },
+    {
+      "en": "off the record",
+      "pos": "phrase",
+      "ko": "비공식적으로",
+      "ex": "He told me off the record that he was resigning."
+    },
+    {
+      "en": "collapse",
+      "pos": "v/n",
+      "ko": "붕괴하다 / 붕괴",
+      "ex": "The coalition government collapsed."
+    },
+    {
+      "en": "grateful",
+      "pos": "adj",
+      "ko": "감사하는",
+      "ex": "I'm really grateful for everything you've done."
+    },
+    {
+      "en": "equity",
+      "pos": "n",
+      "ko": "형평성",
+      "ex": "We should strive for equity, not just equality."
+    },
+    {
+      "en": "hack",
+      "pos": "v/n",
+      "ko": "해킹하다 / 해킹",
+      "ex": "Government systems were hacked."
+    },
+    {
+      "en": "hit a new low",
+      "pos": "v",
+      "ko": "최저점을 찍다",
+      "ex": "Approval ratings have hit a new low."
+    },
+    {
+      "en": "xenophobia",
+      "pos": "n",
+      "ko": "외국인 혐오",
+      "ex": "Xenophobia is on the rise in some regions."
+    },
+    {
+      "en": "monopoly",
+      "pos": "n",
+      "ko": "독점",
+      "ex": "Regulators are concerned about tech monopolies."
+    },
+    {
+      "en": "bail out",
+      "pos": "v",
+      "ko": "구제하다",
+      "ex": "The government bailed out the failing bank."
+    },
+    {
+      "en": "theocracy",
+      "pos": "n",
+      "ko": "신정 정치",
+      "ex": "The country has elements of theocracy."
+    },
+    {
+      "en": "trauma",
+      "pos": "n",
+      "ko": "트라우마",
+      "ex": "Childhood trauma can affect adult behavior."
+    },
+    {
+      "en": "hail",
+      "pos": "v",
+      "ko": "환영하다, 치켜세우다",
+      "ex": "The deal was hailed as a major breakthrough."
+    },
+    {
+      "en": "deregulate",
+      "pos": "v",
+      "ko": "규제를 완화하다",
+      "ex": "They moved to deregulate the energy sector."
+    },
+    {
+      "en": "close ranks",
+      "pos": "phrase",
+      "ko": "단결하다",
+      "ex": "The party closed ranks after the scandal."
+    }
+  ]
+}

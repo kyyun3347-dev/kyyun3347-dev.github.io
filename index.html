@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="단어장">
+  <meta name="theme-color" content="#1A1A6C">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+  <title>영단어 50 Daily</title>
+</head>
+<body>
+<div id="app">
+
+  <!-- ══ HOME ══════════════════════════════════════════ -->
+  <div id="screen-home" class="screen">
+    <div class="header">
+      <h1>영단어 50 Daily</h1>
+    </div>
+    <div class="home-body">
+
+      <div id="home-error" class="hidden" style="background:#FEE2E2;border-radius:12px;padding:16px;margin-bottom:16px;font-size:14px;color:#991B1B">
+        ⚠️ today.json 을 불러오지 못했습니다.<br>
+        먼저 PC에서 <code>python generate_daily.py</code> 를 실행하세요.
+      </div>
+
+      <div class="day-card">
+        <div class="day-label">오늘의 학습</div>
+        <div class="day-num" id="home-day-label">—</div>
+        <div class="day-date" id="home-day-date"></div>
+        <div class="day-type" id="home-day-type"></div>
+      </div>
+
+      <div class="progress-row">
+        <div class="prog-box">
+          <div class="prog-val" id="home-total">—</div>
+          <div class="prog-label">단어 수</div>
+        </div>
+        <div class="prog-box">
+          <div class="prog-val" id="prog-learn">-</div>
+          <div class="prog-label">카드 학습</div>
+        </div>
+        <div class="prog-box">
+          <div class="prog-val" id="prog-qa">-</div>
+          <div class="prog-label">퀴즈 A</div>
+        </div>
+        <div class="prog-box">
+          <div class="prog-val" id="prog-qb">-</div>
+          <div class="prog-label">퀴즈 B</div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="btn-start-learn">
+        <span class="btn-icon">📖</span> 카드 학습 시작
+      </button>
+      <button class="btn btn-secondary" id="btn-start-quiz-a">
+        <span class="btn-icon">🇺🇸</span> 퀴즈 A — 영어 → 한국어
+      </button>
+      <button class="btn btn-secondary" id="btn-start-quiz-b">
+        <span class="btn-icon">🇰🇷</span> 퀴즈 B — 한국어 → 영어
+      </button>
+    </div>
+  </div>
+
+  <!-- ══ LEARN ══════════════════════════════════════════ -->
+  <div id="screen-learn" class="screen">
+    <div class="header">
+      <button class="back-btn" id="btn-learn-back">‹</button>
+      <h1>카드 학습</h1>
+      <span class="badge" id="learn-counter"></span>
+    </div>
+    <div class="learn-body">
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="learn-bar" style="width:0%"></div>
+      </div>
+
+      <div class="flip-card" id="flip-card">
+        <div class="flip-card-inner">
+          <!-- Front -->
+          <div class="flip-face front">
+            <div class="card-word" id="card-word"></div>
+            <div class="card-pos" id="card-pos-front"></div>
+            <div class="card-hint">탭하면 뜻이 보여요 👆</div>
+          </div>
+          <!-- Back -->
+          <div class="flip-face back">
+            <div class="card-ko" id="card-ko"></div>
+            <div class="card-pos" id="card-pos-back"></div>
+            <div class="card-example" id="card-example"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-nav">
+        <button class="nav-btn" id="btn-prev">‹</button>
+        <span class="card-index" id="learn-counter2"></span>
+        <button class="nav-btn" id="btn-next">›</button>
+      </div>
+
+      <button class="btn btn-green hidden" id="btn-to-quiz" style="margin-top:14px">
+        <span class="btn-icon">✅</span> 다 봤어요 — 퀴즈 시작!
+      </button>
+    </div>
+  </div>
+
+  <!-- ══ QUIZ ══════════════════════════════════════════ -->
+  <div id="screen-quiz" class="screen">
+    <div class="header">
+      <button class="back-btn" id="btn-quiz-back">‹</button>
+      <h1 id="quiz-mode-label">퀴즈</h1>
+      <span class="badge" id="quiz-counter"></span>
+    </div>
+    <div class="quiz-body">
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="quiz-bar" style="width:0%"></div>
+      </div>
+
+      <div class="quiz-question-box">
+        <div class="quiz-q-label" id="quiz-q-label"></div>
+        <div class="quiz-q-word" id="quiz-q-word"></div>
+        <div class="quiz-q-pos"  id="quiz-q-pos"></div>
+      </div>
+
+      <div class="choices" id="choices"></div>
+      <div class="quiz-feedback" id="quiz-feedback"></div>
+    </div>
+  </div>
+
+  <!-- ══ RESULT ══════════════════════════════════════════ -->
+  <div id="screen-result" class="screen">
+    <div class="header">
+      <button class="back-btn" id="btn-result-home">‹</button>
+      <h1>결과</h1>
+    </div>
+    <div class="result-body">
+      <div class="score-card">
+        <div class="score-big" id="result-score">0</div>
+        <div class="score-label" id="result-total"></div>
+        <div class="score-sub" id="result-mode"></div>
+        <div style="font-size:22px;margin-top:12px" id="result-grade"></div>
+      </div>
+
+      <button class="btn btn-primary" id="btn-retry">🔄 다시 풀기</button>
+      <button class="btn btn-secondary" id="btn-next-part">➡️ 다음 파트</button>
+      <button class="btn btn-secondary" id="btn-result-home2" onclick="document.getElementById('btn-result-home').click()">🏠 홈으로</button>
+
+      <div class="wrong-title hidden" id="wrong-title">틀린 단어 목록</div>
+      <div id="wrong-list"></div>
+    </div>
+  </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
