@@ -426,6 +426,17 @@ function shuffle(arr) {
   return a;
 }
 
+/* ── TTS ── */
+function speakCurrent() {
+  const word = State.words[State.learnIndex]?.en;
+  if (!word || !window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(word);
+  u.lang = 'en-US';
+  u.rate = 0.85;
+  window.speechSynthesis.speak(u);
+}
+
 /* ── Service Worker ── */
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').catch(() => {});
