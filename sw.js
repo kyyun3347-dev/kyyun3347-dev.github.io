@@ -1,28 +1,27 @@
-const CACHE = 'engwords-v5';
-const ASSETS = ['./', './index.html', './style.css', './app.js',
-                './manifest.json', './icon.svg'];
+const CACHE = 'engwords-v6';
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
   self.skipWaiting();
 });
 
 self.addEventListener('activate', e => {
-  e.waitUntil(caches.keys().then(keys =>
-    Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
-  ));
+  e.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
+    )
+  );
   self.clients.claim();
 });
 
+// 네트워크 우선 — 온라인이면 항상 최신, 오프라인이면 캐시 폴백
 self.addEventListener('fetch', e => {
-  // today.json 은 항상 네트워크 우선 (최신 단어 반영)
-  if (e.request.url.includes('today.json')) {
-    e.respondWith(
-      fetch(e.request).catch(() => caches.match(e.request))
-    );
-    return;
-  }
   e.respondWith(
-    caches.match(e.request).then(r => r || fetch(e.request))
+    fetch(e.request)
+      .then(response => {
+        const clone = response.clone();
+        caches.open(CACHE).then(cache => cache.put(e.request, clone));
+        return response;
+      })
+      .catch(() => caches.match(e.request))
   );
 });
