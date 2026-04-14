@@ -2,44 +2,33 @@ name: daily-generate
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # 06:00 UTC = 15:00 KST
-  workflow_dispatch:        # 수동 실행 가능
+    - cron: "0 6 * * *"
+  workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Generate daily words
         run: python generate_daily.py
-        env:
-          GITHUB_ACTIONS: true
 
       - name: Commit and push
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add today.json data/ progress.json
-          git diff --staged --quiet || git commit -m "update $(date '+%Y-%m-%d')"
+          git diff --staged --quiet || git commit -m "update $(date +%Y-%m-%d)"
           git push
 
       - name: Send push notification
-        run: python -c "
-from notify import send_daily_notification
-import json
-with open('progress.json') as f:
-    p = json.load(f)
-last = p['history'][-1]
-label = f\"Review {last['review_num']:02d}\" if last['type']=='review' else f\"Day {last['study_day']:03d}\"
-send_daily_notification(label)
-"
+        run: python notify_morning.py
         env:
           ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}
