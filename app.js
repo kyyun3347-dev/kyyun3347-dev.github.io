@@ -498,6 +498,27 @@ $('voice-modal').addEventListener('click', e => {
   if (e.target === $('voice-modal')) $('voice-modal').classList.add('hidden');
 });
 
+/* ── Push Notification ── */
+async function initNotifButton() {
+  if (!window.OneSignalDeferred) return;
+  window.OneSignalDeferred.push(async function(OneSignal) {
+    const permission = await OneSignal.Notifications.permissionNative;
+    if (permission === 'granted') return; // 이미 허용됨 — 버튼 숨김
+    $('btn-notif').classList.remove('hidden');
+  });
+}
+
+$('btn-notif').addEventListener('click', async () => {
+  if (!window.OneSignalDeferred) return;
+  window.OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.Notifications.requestPermission();
+    const granted = await OneSignal.Notifications.permissionNative;
+    if (granted === 'granted') {
+      $('btn-notif').classList.add('hidden');
+    }
+  });
+});
+
 /* ── Service Worker ── */
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').catch(() => {});
@@ -505,3 +526,4 @@ if ('serviceWorker' in navigator) {
 
 /* ── Boot ── */
 initHome();
+initNotifButton();
