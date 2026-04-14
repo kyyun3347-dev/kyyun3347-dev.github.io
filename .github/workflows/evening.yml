@@ -1,0 +1,22 @@
+name: Evening Reminder (10PM KST)
+
+on:
+  schedule:
+    - cron: '0 13 * * *'   # 13:00 UTC = 22:00 KST
+  workflow_dispatch:
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Send evening notification
+        run: python notify_evening.py
+        env:
+          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}
