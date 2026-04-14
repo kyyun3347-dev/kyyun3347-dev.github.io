@@ -196,6 +196,13 @@ $('btn-to-quiz').addEventListener('click', () => {
   saveProgress(State.currentKey, { learnDone: true });
   $('prog-learn').textContent = '완료';
   renderArchive(State.selectedKey);
+  // OneSignal 태그 — 오늘 학습 완료
+  const todayKey = State.today?.type === 'review'
+    ? `review${String(State.today.review_num).padStart(2,'0')}`
+    : `day${String(State.today.day).padStart(3,'0')}`;
+  if (State.currentKey === todayKey && window.OneSignalDeferred) {
+    window.OneSignalDeferred.push(os => os.User.addTag('learned_date', State.today.date));
+  }
   startQuiz('A');
 });
 
@@ -309,6 +316,13 @@ function finishQuiz() {
     saveProgress(State.currentKey, { quizB: score });
     $('prog-qb').textContent = score + '점';
     showResult(score, total, '한국어 → 영어');
+    // 퀴즈 B까지 완료 = 오늘 시험 완료
+    const todayKey = State.today?.type === 'review'
+      ? `review${String(State.today.review_num).padStart(2,'0')}`
+      : `day${String(State.today.day).padStart(3,'0')}`;
+    if (State.currentKey === todayKey && window.OneSignalDeferred) {
+      window.OneSignalDeferred.push(os => os.User.addTag('quiz_date', State.today.date));
+    }
   }
 }
 
